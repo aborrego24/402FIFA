@@ -108,3 +108,11 @@ html {
     /* Push the button downwards when pressed */
     transform: translateY(0);
   }
+
+
+/* Score Submission Form */
+
+.score-form {
+  display: grid;
+  grid-template: repeat(10, 200px) / repeat(2, 200px);
+}
