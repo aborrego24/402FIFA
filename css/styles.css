@@ -12,7 +12,7 @@ html {
 
 :root {
   --color-primary: #1b6c00;
-  --color-secondary: #00d9ff;
+  --color-secondary: #000000;
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
@@ -743,31 +743,11 @@ p {
   margin-bottom: 2rem;
 }
 
-.plan--popular .card__header {
-  position: relative;
-}
-
-.plan--popular .card__header::before {
-  width: 40px;
-  display: inline-block;
-  position: absolute;
-  top: -6px;
-  right: 5%;
-}
-
 .plan:hover {
   transform: scale(1.02);
 }
 
-.plan--popular:hover {
-  transform: scale(1.12);
-}
-
 @media screen and (min-width: 1024px) {
-  .plan--popular {
-    transform: scale(1.1);
-  }
-
   .plan__name {
     font-size: 1.4rem;
   }
@@ -792,9 +772,20 @@ p {
   overflow: hidden;
 }
 
-.card__header,
+.card__header {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .card__body {
   padding: 2rem 7%;
+}
+
+.card__header img {
+  max-width: 100%;
+  max-height: 100%;
+  align-self: center;
 }
 
 .card--primary .card__header {
@@ -836,15 +827,29 @@ p {
 }
 
 .seasons-header {
-  font-size: 6rem;
+  font-size: 6.5rem;
   color: white;
   text-shadow: 2px 2px 4px #444444;
+}
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
 }
 
 /* Features */
 .feature {
-  gap: 4rem 2rem;
-  margin: 12rem 0;
+  gap: 4rem 4rem;
+  margin: 8rem 0;
+  text-shadow: 2px 2px 4px #444444;
+}
+
+.feature h3 {
+  font-size: 4rem;
+}
+
+.feature p {
+  font-size: 2rem;
 }
 
 .feature:first-of-type {
@@ -853,10 +858,17 @@ p {
 
 .feature__heading {
   margin: 1rem 0;
+  color: white;
+
 }
 
-@media screen and (min-width: 768px) {
-  .feature:nth-of-type(even) .feature__content {
-    order: 2;
-  }
+.feature__image {
+  width: 100%;
+  border-radius: 10px;
+  margin-right: 40px;
+  box-shadow: 3px 3px 5px 5px rgb(75, 111, 78);
+}
+
+.feature__content {
+  color: white;
 }
