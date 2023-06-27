@@ -20,16 +20,100 @@
     .bio-header {
       font-size: 9rem;
     }
-    .GOTW {
-      width: 80%;
+
+    .feature__image {
+      height: 100%;
+      width: 90%;
+      padding: 0 auto;
+    }
+
+    .favorites {
+      text-align: center;
+      font-size: 4rem;
+      text-shadow: 2px 2px 4px #444444;
+    }
+
+    .crests {
+      width: 75px;
+      max-height: 75px;
+      object-fit: contain;
+      justify-content: start;
+      margin-right: 25px;
+    }
+
+    .crests:last-child {
+      margin-right: 0;
+    }
+
+    .player:first-of-type {
+      margin-left: 70px;
+    }
+
+    .fav-text {
+      color: white;
+      display: flex;
       align-items: center;
     }
 
-    .feature__image {
-      margin-right: 0;
-      padding: 1rem;
-      box-shadow: none;
-      border-radius: 20px;
+    p {
+      margin: 0;
+    }
+
+    .feature {
+      row-gap: 5px;
+    }
+
+    .feature h3 {
+      font-size: 6rem;
+    }
+
+    .feature .small {
+      font-size: 3.5rem;
+    }
+
+    @media screen and (min-width: 768px) {
+      .season-text {
+        margin-bottom: 1.5rem;
+      }
+      .crests {
+        margin: 0 28px 0 5px;
+      }
+      .feature__image {
+        margin-left: 100px;
+      }
+
+      .favorites {
+        font-size: 7rem;
+      }
+
+      .feature:first-of-type {
+        margin-top: 5px;
+      }
+      .block__header {
+        margin-bottom: 1.5rem;
+      }
+      .seasons-text-end {
+        margin-bottom: 40px;
+      }
+    }
+    .centered-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0px;
+    }
+
+    .reduce-gap {
+      margin-bottom: 0;
+      text-align: center;
+    }
+
+    .feature {
+      margin-top: 0.5rem;
+    }
+
+    .feature:first-of-type {
+      margin-top: 0.5rem;
     }
   </style>
   <body>
@@ -72,72 +156,183 @@
           superstar.
         </p>
       </header>
-      <article class="grid grid--1x2 feature">
-        <div class="feature__content">
-          <h3 class="feature__heading">Fun Facts</h3>
-          <p>Nationality: Mexican & Greek</p>
-          <p>
-            Rivals: <a href="Michael.html">Michael</a> and
-            <a href="Joe.html">Joe</a>
-          </p>
-          <p>Season 1 Veteran</p>
-        </div>
-        <picture>
-          <img class="feature__image" src="" alt="Alej Photo" />
-        </picture>
-      </article>
     </section>
     <section>
       <header class="block__header">
         <h2 class="seasons-header bio-header">Awards</h2>
         <p class="seasons-text">Alejandro is the Current World Cup Champion</p>
-        <p class="seasons-text">
+        <p class="seasons-text seasons-text-end">
           Alejandro was the recipient of the 3<sup>rd</sup>, 5<sup>th</sup>, and
           6<sup>th</sup>
           Goal of the Week Trophies
         </p>
       </header>
-      <div class="GOTW-container">
-        <div class="grid grid--1x2 row">
-          <img
-            class="feature__image GOTW"
-            src="Player-Bio-Photos/GOTW3.jpg"
-            alt="Ale Winning GOTW #3"
-          />
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/UVTkwfmLkF8"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div class="grid grid--1x2 row">
-          <img
-            class="feature__image"
-            src="Player-Bio-Photos/GOTW5.jpg"
-            alt="Ale Winning GOTW #5"
-          />
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/LpRSWZGngz8"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div class="grid grid--1x2 row">
-          <img
-            class="feature__image"
-            src="Player-Bio-Photos/GOTW6.jpg"
-            alt="Ale Winning GOTW #6"
-          />
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/OKLO0bgzuu8"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
+      <article class="grid grid--1x2 feature">
+        <img
+          class="feature__image"
+          src="Player-Bio-Photos/GOTW3.jpg"
+          alt="Ale Winning GOTW #3"
+        />
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/UVTkwfmLkF8"
+          allowfullscreen
+        ></iframe>
+      </article>
+      <article class="grid grid--1x2 feature">
+        <img
+          class="feature__image"
+          src="Player-Bio-Photos/GOTW5.jpg"
+          alt="Ale Winning GOTW #5"
+        />
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/LpRSWZGngz8"
+          allowfullscreen
+        ></iframe>
+      </article>
+      <article class="grid grid--1x2 feature">
+        <img
+          class="feature__image"
+          src="Player-Bio-Photos/GOTW6.jpg"
+          alt="Ale Winning GOTW #6"
+        />
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/OKLO0bgzuu8"
+          allowfullscreen
+        ></iframe>
+      </article>
     </section>
+    <article class="feature reduce-gap">
+      <div class="feature__content">
+        <h3 class="feature__heading">Fun Facts</h3>
+      </div>
+    </article>
+    <article class="grid grid--1x2 feature">
+      <div class="feature__content">
+        <p class="fav-text">
+          Nationality: Mexican & Greek
+          <img
+            class="crests player"
+            src="Player-Bio-Photos/Mexico-Flag.webp"
+            alt="mexico flag"
+          /><img
+            class="crests"
+            src="Player-Bio-Photos/Flag-Greece.webp"
+            alt="greek flag"
+          />
+        </p>
+      </div>
+      <div class="feature__content">
+        <p class="fav-text">
+          Rivals: Michael and Joe
+          <img
+            class="crests player"
+            src="Player-Bio-Photos/Player Headshots/Michael-Headshot.png"
+            alt=""
+          />
+          <img
+            class="crests player"
+            src="Player-Bio-Photos/Player Headshots/Joe-Headshot.png"
+            alt=""
+          />
+        </p>
+      </div>
+    </article>
+    <article class="feature reduce-gap">
+      <div class="feature__content">
+        <h3 class="feature__heading">Favorites: In Game</h3>
+      </div>
+    </article>
+    <section>
+      <article class="grid grid--1x2 feature">
+        <h3 class="feature__heading favorites small">Favorite Teams:</h3>
+        <p class="fav-text">
+          Belgium
+          <img
+            class="crests"
+            src="../Season-1-Team-Logos/belgiumcrest.png"
+            alt="Belgium Crest"
+          />
+          Portugal<img
+            class="crests"
+            src="../Season-1-Team-Logos/portugalcrest.png"
+            alt="Portual crest"
+          />
+          Mexico<img
+            class="crests"
+            src="../Season-1-Team-Logos/mexicocrest.png"
+            alt="Mexico crest"
+          />
+        </p>
+      </article>
+      <article class="grid grid--1x2 feature">
+        <h3 class="feature__heading favorites small">Favorite Players:</h3>
+        <p class="fav-text">
+          Kompany
+          <img
+            class="crests"
+            src="../FIFA Player Headshots/kompany.png"
+            alt="Belgium Crest"
+          />
+          Ibrahimović<img
+            class="crests"
+            src="../FIFA Player Headshots/Zlatan.png"
+            alt="Portual crest"
+          />
+          Hazard<img
+            class="crests"
+            src="../FIFA Player Headshots/Hazard.png"
+            alt="Mexico crest"
+          />
+        </p>
+      </article>
+    </section>
+    <article class="feature reduce-gap">
+      <div class="feature__content">
+        <h3 class="feature__heading">Top 3 FIFA Songs:</h3>
+      </div>
+    </article>
+    <div class="centered-container">
+      <iframe
+        class="songcenter"
+        style="border-radius: 12px"
+        src="https://open.spotify.com/embed/track/5TloYFwzd09yWy8xkRLVUu?utm_source=generator"
+        width="90%"
+        height="200"
+        frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+    </div>
+    <div class="centered-container">
+      <iframe
+        style="border-radius: 12px"
+        src="https://open.spotify.com/embed/track/4JlKk8J0Q7IdNchS0iJRSj?utm_source=generator"
+        width="90%"
+        height="200"
+        frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+    </div>
+    <div class="centered-container">
+      <iframe
+        style="border-radius: 12px"
+        src="https://open.spotify.com/embed/track/78EQ5LZGgviMU9k0zrqv1r?utm_source=generator"
+        width="90%"
+        height="200"
+        frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+    </div>
   </body>
 </html>
