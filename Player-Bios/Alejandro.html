@@ -99,6 +99,13 @@
       margin-bottom: 0;
       margin-right: 5px;
     }
+
+    th {
+      font-size: 3.5rem;
+    }
+    .movedown {
+      margin-bottom: 0.5rem;
+    }
   </style>
   <body>
     <nav class="nav collapsible">
@@ -194,79 +201,6 @@
         ></iframe>
       </article>
     </section>
-
-    <!---
-    <article class="feature reduce-gap">
-      <div class="feature__content">
-        <h3 class="feature__heading">Fun Facts</h3>
-      </div>
-    </article>
-    <article class="grid grid--1x2 feature">
-      <div class="feature__content">
-        <p class="fav-text">
-          Nationality: Mexican & Greek
-          <img
-            class="crests player"
-            src="Player-Bio-Photos/Mexico-Flag.webp"
-            alt="mexico flag"
-          /><img
-            class="crests"
-            src="Player-Bio-Photos/Flag-Greece.webp"
-            alt="greek flag"
-          />
-        </p>
-      </div>
-      <div class="feature__content">
-        <p class="fav-text">
-          Rivals: Michael and Joe
-          <img
-            class="crests player"
-            src="Player-Bio-Photos/Player Headshots/Michael-Headshot.png"
-            alt=""
-          />
-          <img
-            class="crests player"
-            src="Player-Bio-Photos/Player Headshots/Joe-Headshot.png"
-            alt=""
-          />
-        </p>
-      </div>
-    </article>
-    <article class="feature reduce-gap">
-      <div class="feature__content">
-        <h3 class="feature__heading">Favorites: In Game</h3>
-      </div>
-    </article>
-    <section>
-      <article class="grid grid--1x2 feature">
-        <h3 class="feature__heading favorites small">Favorite Teams:</h3>
-        
-      </article>
-      <article class="grid grid--1x2 feature">
-        <h3 class="feature__heading favorites small">Favorite Players:</h3>
-      </article>
-    </section>
-    <article class="feature reduce-gap">
-      <div class="feature__content">
-        <h3 class="feature__heading">Season 1 Stats:</h3>
-      </div>
-    </article>
-    <section>
-      <article class="grid grid--1x2 feature">
-        <div class="s1">
-          <p class="fav-text">Season 1 Record:</p>
-          <p class="fav-text">121 - 66</p>
-          <p class="fav-text">64.4%</p>
-        </div>
-        <div class="s1">
-          <p class="fav-text">402 FIFA World Cup</p>
-          <p class="fav-text">3 - 0</p>
-          <p class="fav-text">Champion</p>
-        </div>
-      </article>
-      <article class="grid grid--1x2 feature"></article>
-    </section>
-    -->
     <section>
       <header class="block__header">
         <h2 class="seasons-header bio-header">Top 3 FIFA Songs:</h2>
@@ -314,7 +248,7 @@
       <header class="block__header">
         <h2 class="seasons-header bio-header">Tournament Performances:</h2>
       </header>
-      <article class="grid grid--1x2 feature">
+      <article class="grid grid--1x2 feature movedown">
         <div class="feature__content">
           <h3 class="feature__heading">1<sup>st</sup> annual World Cup</h3>
           <div>
@@ -428,7 +362,90 @@
           </td>
         </tr>
       </table>
+      <table class="fav__table">
+        <tr>
+          <th colspan="3">Favorite Clubs (Prem, La Liga, Other):</th>
+        </tr>
+        <tr>
+          <td class="table__insert">
+            Manchester City
+            <img class="crests" src="../Team-Logos/MCFClogo.png" alt="MCFC" />
+          </td>
+          <td class="table__insert">
+            Real Madrid<img
+              class="crests"
+              src="../Team-Logos/RMFClogo.png"
+              alt="Real Madrid crest"
+            />
+          </td>
+          <td class="table__insert">
+            Morecambe<img
+              class="crests"
+              src="../Team-Logos/morecambe.png"
+              alt="Morecambe logo"
+            />
+          </td>
+        </tr>
+      </table>
     </section>
+    <section class="block container">
+      <header class="block__header">
+        <h2 class="seasons-header bio-header">Other Facts:</h2>
+      </header>
+      <table class="fav__table">
+        <tr>
+          <th colspan="2">Nationality:</th>
+        </tr>
+        <tr>
+          <td class="table__insert">
+            Mexican
+            <img
+              class="crests"
+              src="../Player-Bios/Player-Bio-Photos/Mexico-Flag.webp"
+              alt="Mexico"
+            />
+          </td>
+          <td class="table__insert">
+            Greek
+            <img
+              class="crests"
+              src="../Player-Bios/Player-Bio-Photos/Flag-Greece.webp"
+              alt="Greece"
+            />
+          </td>
+        </tr>
+      </table>
+      <table class="fav__table">
+        <tr>
+          <th colspan="2">Rivals:</th>
+        </tr>
+        <tr>
+          <td class="table__insert">
+            Joe
+            <img
+              class="crests"
+              src="../Player-Bios/Player-Bio-Photos/Player Headshots/Joe-Headshot.png"
+              alt="MCFC"
+            />
+          </td>
+          <td class="table__insert">
+            Michael<img
+              class="crests"
+              src="../Player-Bios/Player-Bio-Photos/Player Headshots/Michael-Headshot.png"
+              alt="Real Madrid crest"
+            />
+          </td>
+          <td class="table__insert">
+            Karsin<img
+              class="crests"
+              src="../Player-Bios/Player-Bio-Photos/Player Headshots/Karsin-Headshot.png"
+              alt="Real Madrid crest"
+            />
+          </td>
+        </tr>
+      </table>
+    </section>
+
     <section class="block container">
       <header class="block__header">
         <h2 class="seasons-header bio-header">Season 1 Stats:</h2>
