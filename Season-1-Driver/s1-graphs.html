@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Tournaments</title>
+  </head>
+  <style>
+    .graph {
+      width: 662px;
+      height: 343px;
+    }
+    .grid,
+    .feature {
+      margin: 0;
+      gap: 0;
+    }
+    .grid {
+      justify-content: center;
+    }
+    iframe {
+      margin-bottom: 1rem;
+    }
+  </style>
+  <body>
+    <nav class="nav collapsible">
+      <a href="../index.html"
+        ><img class="nav__image" src="../HP-images/FIFA16.png" alt=""
+      /></a>
+      <svg class="icon icon--white nav__toggler">
+        <use xlink:href="../HP-images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item">
+          <a href="../index.html">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="../Player-Bios/player-bios-index.html">Player Biographies</a>
+        </li>
+        <li class="nav__item">
+          <a href="../Season-2-Driver/S2-index.html">Season 2 Stats & Info</a>
+        </li>
+        <li class="nav__item">
+          <a href="../Tournaments/tournaments-index.html">Tournaments</a>
+        </li>
+        <li class="nav__item">
+          <a href="../Extras/extras-index.html">Extras</a>
+        </li>
+      </ul>
+    </nav>
+    <script src="../js/main.js"></script>
+    <section class="block container">
+      <header class="block__header">
+        <h2 class="seasons-header">Graphed Stats:</h2>
+      </header>
+      <article class="grid feature">
+        <iframe
+          class="graph"
+          style="border: 4px solid black"
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRoAxhWippDxuPjlCO1vY82Ii2PSfXHVYn7dHalaKZT4vXh05boAoJqxcBnKy2YmV3lQszQ6UiDlKO0/pubchart?oid=703838468&amp;format=interactive"
+        ></iframe>
+        <iframe
+          class="graph"
+          style="border: 4px solid black"
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRoAxhWippDxuPjlCO1vY82Ii2PSfXHVYn7dHalaKZT4vXh05boAoJqxcBnKy2YmV3lQszQ6UiDlKO0/pubchart?oid=2120986193&amp;format=interactive"
+        ></iframe>
+      </article>
+      <article class="grid feature">
+        <div>
+          <iframe
+            class="graph"
+            style="border: 4px solid black"
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRoAxhWippDxuPjlCO1vY82Ii2PSfXHVYn7dHalaKZT4vXh05boAoJqxcBnKy2YmV3lQszQ6UiDlKO0/pubchart?oid=1254113776&amp;format=interactive"
+          ></iframe>
+        </div>
+        <div>
+          <iframe
+            class="graph"
+            style="border: 4px solid black"
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRoAxhWippDxuPjlCO1vY82Ii2PSfXHVYn7dHalaKZT4vXh05boAoJqxcBnKy2YmV3lQszQ6UiDlKO0/pubchart?oid=733353861&amp;format=interactive"
+          ></iframe>
+        </div>
+      </article>
+      <article class="grid feature">
+        <div>
+          <iframe
+            class="graph"
+            style="border: 4px solid black"
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRoAxhWippDxuPjlCO1vY82Ii2PSfXHVYn7dHalaKZT4vXh05boAoJqxcBnKy2YmV3lQszQ6UiDlKO0/pubchart?oid=1876138146&amp;format=interactive"
+          ></iframe>
+        </div>
+        <div>
+          <iframe
+            class="graph"
+            style="border: 4px solid black"
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRoAxhWippDxuPjlCO1vY82Ii2PSfXHVYn7dHalaKZT4vXh05boAoJqxcBnKy2YmV3lQszQ6UiDlKO0/pubchart?oid=2019413903&amp;format=interactive"
+          ></iframe>
+        </div>
+      </article>
+    </section>
+  </body>
+</html>
