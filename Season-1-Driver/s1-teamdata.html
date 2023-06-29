@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css"
+    />
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <title>S1 Team Data</title>
+  </head>
+  <style>
+    th,
+    td {
+      text-align: center;
+      padding: 8px;
+      border-bottom: 1px solid black;
+      border-bottom: 1px solid #ddd;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    @media only screen and (max-width: 600px) {
+      table {
+        font-size: 12px;
+      }
+
+      th,
+      td {
+        padding: 4px;
+      }
+    }
+    thead {
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    th {
+      background-color: #f3cc59;
+      color: black;
+      border: 1px solid black;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    .dataTables_filter {
+      margin-bottom: 10px;
+    }
+    img.s1.logos {
+      width: 50px;
+    }
+    .dataTables_filter input {
+      background-color: white;
+      border: 1px solid #ddd;
+      padding: 5px;
+      border-radius: 5px;
+    }
+  </style>
+  <body>
+    <nav class="nav collapsible">
+      <a href="../index.html"
+        ><img class="nav__image" src="../HP-images/FIFA16.png" alt=""
+      /></a>
+      <svg class="icon icon--white nav__toggler">
+        <use xlink:href="../HP-images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item">
+          <a href="../index.html">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="../Player-Bios/player-bios-index.html">Player Biographies</a>
+        </li>
+        <li class="nav__item">
+          <a href="../Season-2-Driver/S2-index.html">Season 2 Stats & Info</a>
+        </li>
+        <li class="nav__item">
+          <a href="../Tournaments/tournaments-index.html">Tournaments</a>
+        </li>
+        <li class="nav__item">
+          <a href="../Extras/extras-index.html">Extras</a>
+        </li>
+      </ul>
+    </nav>
+    <script src="../js/main.js"></script>
+  </body>
+  <section class="block container">
+    <header class="block__header">
+      <h2 class="seasons-header">Overall Team Data:</h2>
+    </header>
+    <table class="searchablesortable" id="searchablesortable">
+      <thead>
+        <tr>
+          <th>TEAM NAME</th>
+          <th>TEAM CREST</th>
+          <th># GP</th>
+          <th># WINS</th>
+          <th># LOSSES</th>
+          <th>WIN %</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Belgium</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/Belgium%20s1%20crest.png"
+              alt="Belgium's S1 Crest"
+            />
+          </td>
+          <td>38</td>
+          <td>23</td>
+          <td>15</td>
+          <td>60.5%</td>
+        </tr>
+        <tr>
+          <td>Brazil</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/Brazil%20s1%20crest"
+              alt="Brazil's S1 Crest"
+            />
+          </td>
+          <td>36</td>
+          <td>25</td>
+          <td>11</td>
+          <td>69.4%</td>
+        </tr>
+        <tr>
+          <td>France</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/France%20s1%20crest.png"
+              alt="France's S1 Crest"
+            />
+          </td>
+          <td>31</td>
+          <td>10</td>
+          <td>21</td>
+          <td>32.3%</td>
+        </tr>
+        <tr>
+          <td>Netherlands</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/Netherlands%20s1%20crest.png"
+              alt="Netherlands' S1 Crest"
+            />
+          </td>
+          <td>29</td>
+          <td>14</td>
+          <td>15</td>
+          <td>48.3%</td>
+        </tr>
+        <tr>
+          <td>Portugal</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/portugal%20s1%20crest.png"
+              alt="portugal's S1 Crest"
+            />
+          </td>
+          <td>26</td>
+          <td>16</td>
+          <td>10</td>
+          <td>61.5%</td>
+        </tr>
+        <tr>
+          <td>Spain</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/spain%20s1%20crest.png"
+              alt="spain's S1 Crest"
+            />
+          </td>
+          <td>26</td>
+          <td>11</td>
+          <td>15</td>
+          <td>42.3%</td>
+        </tr>
+        <tr>
+          <td>Mexico</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/mexico%20s1%20crest.png"
+              alt="mexico's S1 Crest"
+            />
+          </td>
+          <td>25</td>
+          <td>14</td>
+          <td>11</td>
+          <td>56%</td>
+        </tr>
+        <tr>
+          <td>Turkey</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/turkey%20s1%20crest.webp"
+              alt="turkey's S1 Crest"
+            />
+          </td>
+          <td>25</td>
+          <td>11</td>
+          <td>14</td>
+          <td>44%</td>
+        </tr>
+        <tr>
+          <td>Uruguay</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/uruguay%20s1%20crest.webp"
+              alt="uruguay's S1 Crest"
+            />
+          </td>
+          <td>23</td>
+          <td>9</td>
+          <td>14</td>
+          <td>39.1%</td>
+        </tr>
+        <tr>
+          <td>Italy</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/italy%20s1%20crest.png"
+              alt="italy's S1 Crest"
+            />
+          </td>
+          <td>22</td>
+          <td>9</td>
+          <td>13</td>
+          <td>40.9%</td>
+        </tr>
+        <tr>
+          <td>Argentina</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/argentina%20s1%20crest.png"
+              alt="argentina's S1 Crest"
+            />
+          </td>
+          <td>21</td>
+          <td>11</td>
+          <td>10</td>
+          <td>52.4%</td>
+        </tr>
+        <tr>
+          <td>Colombia</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/colombia%20s1%20crest.webp"
+              alt="colombia's S1 Crest"
+            />
+          </td>
+          <td>20</td>
+          <td>9</td>
+          <td>11</td>
+          <td>45%</td>
+        </tr>
+        <tr>
+          <td>Germany</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/germany%20s1%20crest%20.png"
+              alt="germany's S1 Crest"
+            />
+          </td>
+          <td>19</td>
+          <td>10</td>
+          <td>9</td>
+          <td>52.6%</td>
+        </tr>
+        <tr>
+          <td>England</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/england%20s1%20crest"
+              alt="england's S1 Crest"
+            />
+          </td>
+          <td>18</td>
+          <td>11</td>
+          <td>7</td>
+          <td>61.1%</td>
+        </tr>
+        <tr>
+          <td>Czech Republic</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/czech%20republic%20s1%20crest.webp"
+              alt="Czech republic's S1 Crest"
+            />
+          </td>
+          <td>18</td>
+          <td>8</td>
+          <td>10</td>
+          <td>44.4%</td>
+        </tr>
+        <tr>
+          <td>Sweden</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/sweeden%20s1%20crest.png"
+              alt="sweeden's S1 Crest"
+            />
+          </td>
+          <td>18</td>
+          <td>7</td>
+          <td>11</td>
+          <td>38.9%</td>
+        </tr>
+        <tr>
+          <td>Côte d’Ivoire</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/cote%20divorie%20s1%20crest.webp"
+              alt="cote divorie's S1 Crest"
+            />
+          </td>
+          <td>18</td>
+          <td>5</td>
+          <td>13</td>
+          <td>27.8%</td>
+        </tr>
+        <tr>
+          <td>Denmark</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/denmark%20s1%20logo.webp"
+              alt="denmark's S1 Crest"
+            />
+          </td>
+          <td>15</td>
+          <td>8</td>
+          <td>7</td>
+          <td>53.3%</td>
+        </tr>
+        <tr>
+          <td>Poland</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/poland%20s1%20crest.png"
+              alt="poland's S1 Crest"
+            />
+          </td>
+          <td>15</td>
+          <td>5</td>
+          <td>10</td>
+          <td>33.3%</td>
+        </tr>
+        <tr>
+          <td>Chile</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/chile%20s1%20logo.webp"
+              alt="chile's S1 Crest"
+            />
+          </td>
+          <td>14</td>
+          <td>7</td>
+          <td>7</td>
+          <td>50%</td>
+        </tr>
+        <tr>
+          <td>Switzerland</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/switzerland%20s1%20crest.png"
+              alt="switzerland's S1 Crest"
+            />
+          </td>
+          <td>13</td>
+          <td>8</td>
+          <td>5</td>
+          <td>61.5%</td>
+        </tr>
+        <tr>
+          <td>United States</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/US%20s1%20crest.png"
+              alt="US's S1 Crest"
+            />
+          </td>
+          <td>12</td>
+          <td>9</td>
+          <td>3</td>
+          <td>75%</td>
+        </tr>
+        <tr>
+          <td>Russia</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/russia%20s1%20crest.png"
+              alt="russia's S1 Crest"
+            />
+          </td>
+          <td>12</td>
+          <td>6</td>
+          <td>6</td>
+          <td>50%</td>
+        </tr>
+        <tr>
+          <td>Ireland</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/ireland%20s1%20logo.webp"
+              alt="ireland's S1 Crest"
+            />
+          </td>
+          <td>9</td>
+          <td>4</td>
+          <td>5</td>
+          <td>44.4%</td>
+        </tr>
+        <tr>
+          <td>Austria</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/austria%20s1%20crest.png"
+              alt="austria's S1 Crest"
+            />
+          </td>
+          <td>8</td>
+          <td>4</td>
+          <td>4</td>
+          <td>50%</td>
+        </tr>
+        <tr>
+          <td>Cameroon</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/cameroon%20s1%20logo.webp"
+              alt="cameroon's S1 Crest"
+            />
+          </td>
+          <td>8</td>
+          <td>3</td>
+          <td>5</td>
+          <td>37.5%</td>
+        </tr>
+        <tr>
+          <td>Wales</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/wales%20s1%20crest.png"
+              alt="wales's S1 Crest"
+            />
+          </td>
+          <td>7</td>
+          <td>6</td>
+          <td>1</td>
+          <td>85.7%</td>
+        </tr>
+        <tr>
+          <td>Scotland</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/scotland%20s1%20logo.png"
+              alt="scotland's S1 Crest"
+            />
+          </td>
+          <td>7</td>
+          <td>5</td>
+          <td>2</td>
+          <td>71.4%</td>
+        </tr>
+        <tr>
+          <td>Greece</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/greece%20s1%20logo.webp"
+              alt="greece's S1 Crest"
+            />
+          </td>
+          <td>7</td>
+          <td>4</td>
+          <td>3</td>
+          <td>57.1%</td>
+        </tr>
+        <tr>
+          <td>India</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/india%20s1%20crest.png"
+              alt="india's S1 Crest"
+            />
+          </td>
+          <td>7</td>
+          <td>4</td>
+          <td>3</td>
+          <td>57.1%</td>
+        </tr>
+        <tr>
+          <td>Venezuela</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/venezuela%20s1%20logo.webp"
+              alt="venezuela's S1 Crest"
+            />
+          </td>
+          <td>7</td>
+          <td>3</td>
+          <td>4</td>
+          <td>42.9%</td>
+        </tr>
+        <tr>
+          <td>Korea</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/korea%20s1%20logo.png"
+              alt="korea's S1 Crest"
+            />
+          </td>
+          <td>7</td>
+          <td>3</td>
+          <td>4</td>
+          <td>42.9%</td>
+        </tr>
+        <tr>
+          <td>Egypt</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/egypt%20s1%20crest.png"
+              alt="egypt's S1 Crest"
+            />
+          </td>
+          <td>6</td>
+          <td>1</td>
+          <td>5</td>
+          <td>16.7%</td>
+        </tr>
+        <tr>
+          <td>Norway</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/norway%20s1%20logo.webp"
+              alt="norway's S1 Crest"
+            />
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>2</td>
+          <td>50%</td>
+        </tr>
+        <tr>
+          <td>Peru</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/peru.png"
+              alt="peru's S1 Crest"
+            />
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>2</td>
+          <td>50%</td>
+        </tr>
+        <tr>
+          <td>Northern Ireland</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/northern%20ireland%20s1%20logo.webp"
+              alt="northern ireland's S1 Crest"
+            />
+          </td>
+          <td>4</td>
+          <td>2</td>
+          <td>2</td>
+          <td>50%</td>
+        </tr>
+        <tr>
+          <td>Bulgaria</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/bulgaria%20s1%20crest.webp"
+              alt="bulgaria's S1 Crest"
+            />
+          </td>
+          <td>4</td>
+          <td>1</td>
+          <td>3</td>
+          <td>25%</td>
+        </tr>
+        <tr>
+          <td>Romania</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/romania%20s1%20crest.webp"
+              alt="romania's S1 Crest"
+            />
+          </td>
+          <td>4</td>
+          <td>1</td>
+          <td>3</td>
+          <td>25%</td>
+        </tr>
+        <tr>
+          <td>Australia</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/australia%20s1%20crest.webp"
+              alt="australia's S1 Crest"
+            />
+          </td>
+          <td>3</td>
+          <td>2</td>
+          <td>1</td>
+          <td>66.7%</td>
+        </tr>
+        <tr>
+          <td>Ecuador</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/ecuador%20s1%20logo.png"
+              alt="ecuador's S1 Crest"
+            />
+          </td>
+          <td>3</td>
+          <td>2</td>
+          <td>1</td>
+          <td>66.7%</td>
+        </tr>
+        <tr>
+          <td>Slovenia</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/slovenia%20s1%20logo.webp"
+              alt="slovenia's S1 Crest"
+            />
+          </td>
+          <td>3</td>
+          <td>2</td>
+          <td>1</td>
+          <td>66.7%</td>
+        </tr>
+        <tr>
+          <td>South Africa</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/south%20africa%20s1%20logo.png"
+              alt="south africa's S1 Crest"
+            />
+          </td>
+          <td>2</td>
+          <td>2</td>
+          <td>0</td>
+          <td>100%</td>
+        </tr>
+        <tr>
+          <td>New Zealand</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/new%20zeland%20s1%20logo.webp"
+              alt="new zeland's S1 Crest"
+            />
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>1</td>
+          <td>50%</td>
+        </tr>
+        <tr>
+          <td>Hungary</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/hungary%20s1%20logo.webp"
+              alt="hungary's S1 Crest"
+            />
+          </td>
+          <td>2</td>
+          <td>1</td>
+          <td>1</td>
+          <td>50%</td>
+        </tr>
+        <tr>
+          <td>Finland</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/finland%20s1%20crest.png"
+              alt="finland's S1 Crest"
+            />
+          </td>
+          <td>2</td>
+          <td>0</td>
+          <td>2</td>
+          <td>0%</td>
+        </tr>
+        <tr>
+          <td>Bolivia</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/bolivia%20s1%20crest.webp"
+              alt="bolivia's S1 Crest"
+            />
+          </td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0%</td>
+        </tr>
+        <tr>
+          <td>Paraguay</td>
+          <td>
+            <img
+              class="s1 logos"
+              src="../Season%201%20Photos/Season%201%20Team%20Logos/paraguay%20s1%20crest.webp"
+              alt="Paraguay's S1 Crest"
+            />
+          </td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0%</td>
+        </tr>
+      </tbody>
+    </table>
+    <script>
+      $(document).ready(function () {
+        // Set font family
+        $("body").css("font-family", "'Titillium Web', sans-serif");
+
+        // Initialize DataTables
+        $("#searchablesortable").DataTable({
+          pageLength: 47, // Display 50 elements per page
+          searching: true, // Enable search box
+          ordering: true, // Enable sorting
+          lengthChange: false, // Remove "Show x entries" control
+          info: false, // Remove "Showing x to y of z entries" info
+          paging: false, // Remove pagination controls
+        });
+      });
+    </script>
+  </section>
+</html>
