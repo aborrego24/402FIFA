@@ -16,6 +16,17 @@
     <link rel="stylesheet" href="../css/styles.css" />
     <title>Tournaments</title>
   </head>
+  <style>
+    .grid--1x2 {
+      display: grid;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      justify-items: center;
+      text-align: center;
+      grid-template-columns: 50% 50%;
+    }
+  </style>
   <body>
     <nav class="nav collapsible">
       <a href="../index.html"
@@ -43,5 +54,49 @@
       </ul>
     </nav>
     <script src="../js/main.js"></script>
+    <section class="block container">
+      <header class="block__header">
+        <h2 class="seasons-header">Season 1</h2>
+        <p class="seasons-text">
+          Explore the birth of the league, from the first games, to the World
+          Cup. Gain insight into the league developments, and off-season
+          content.
+        </p>
+      </header>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content">
+          <h3 class="feature__heading">Individual Stats</h3>
+          <button class="button2">
+            <a class="links" href="Season-2-Driver/S2-index.html"
+              >Learn More →</a
+            >
+          </button>
+        </div>
+        <div class="feature__content">
+          <h3 class="feature__heading">League Stats</h3>
+          <button class="button2">
+            <a class="links" href="Season-2-Driver/S2-index.html"
+              >Learn More →</a
+            >
+          </button>
+        </div>
+      </article>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content">
+          <h3 class="feature__heading">Team Data</h3>
+          <button class="button2">
+            <a class="links" href="Season-2-Driver/S2-index.html"
+              >Learn More →</a
+            >
+          </button>
+        </div>
+        <div class="feature__content">
+          <h3 class="feature__heading">Graphs</h3>
+          <button class="button2">
+            <a class="links" href="Season-2-Driver/S2-index.html">See More →</a>
+          </button>
+        </div>
+      </article>
+    </section>
   </body>
 </html>

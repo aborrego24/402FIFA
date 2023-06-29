@@ -21,13 +21,6 @@
       font-size: 9rem;
     }
 
-    .crests {
-      width: 75px;
-      max-height: 75px;
-      object-fit: contain;
-      justify-content: start;
-    }
-
     .crests:last-child {
       margin-right: 0;
     }
@@ -87,6 +80,10 @@
 
     .crests {
       margin-left: 4px;
+      width: 75px;
+      max-height: 75px;
+      object-fit: contain;
+      justify-content: start;
     }
     .crests__nomargin {
       margin: 0;
@@ -105,6 +102,10 @@
     }
     .movedown {
       margin-bottom: 0.5rem;
+    }
+
+    .crestsmall {
+      height: 50px;
     }
   </style>
   <body>
@@ -152,6 +153,10 @@
       <header class="block__header">
         <h2 class="seasons-header bio-header">Awards</h2>
         <p class="seasons-text">Alejandro is the Current World Cup Champion</p>
+        <p class="seasons-text">
+          At the 1<sup>st</sup> annual World Cup, Alejandro won the Golden Ball
+          Award.
+        </p>
         <p class="seasons-text seasons-text-end">
           Alejandro was the recipient of the 3<sup>rd</sup>, 5<sup>th</sup>, and
           6<sup>th</sup>
@@ -400,7 +405,7 @@
           <td class="table__insert">
             Mexican
             <img
-              class="crests"
+              class="crestsmall crests"
               src="../Player-Bios/Player-Bio-Photos/Mexico-Flag.webp"
               alt="Mexico"
             />
@@ -448,11 +453,15 @@
 
     <section class="block container">
       <header class="block__header">
-        <h2 class="seasons-header bio-header">Season 1 Stats:</h2>
+        <h2 class="seasons-header bio-header">Season Stats:</h2>
       </header>
       <p class="seemore">
-        View Season 1 Player's Stats, See the Season 1 Stats & Info Section:
+        To View Player's Stats, See the Season 1 or Season 2 Stats & Info
+        Section:
       </p>
+      <button class="button2 scale__button">
+        <a class="links" href="../Season-2-Driver/S2-index.html">Season 2 →</a>
+      </button>
       <button class="button2 scale__button">
         <a class="links" href="../Season-1-Driver/S1-index.html">Season 1 →</a>
       </button>
