@@ -893,3 +893,8 @@ p {
   float: left;
 }
 
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
