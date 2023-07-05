@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>League Stats</title>
+  </head>
+  <style>
+    th,
+    td {
+      text-align: center;
+      padding: 8px;
+      border-bottom: 1px solid black;
+      border-bottom: 1px solid #ddd;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    @media only screen and (max-width: 600px) {
+      table {
+        font-size: 12px;
+      }
+
+      th,
+      td {
+        padding: 4px;
+      }
+    }
+    thead {
+      font-size: 20px;
+      font-weight: 800;
+    }
+    th {
+      background-color: #f3cc59;
+      color: black;
+      border: 1px solid black;
+      font-size: 2.5rem;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    tr:nth-child(odd) {
+      background-color: #ffffff;
+    }
+    .leaguestats__table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 2rem;
+    }
+    .leaguestats__table th:first-child,
+    .leaguestats__table td:first-child {
+      width: 50%;
+    }
+    .leaguestats__table th:last-child,
+    .leaguestats__table td:last-child {
+      width: 50%;
+    }
+    .leaguestats__table tbody {
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+      border-bottom: 1px solid black;
+    }
+    .leaguestats__table-games {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 1.5rem;
+    }
+    .leaguestats__table-games td {
+      border-right: 1px solid black;
+    }
+  </style>
+  <body>
+    <nav class="nav collapsible">
+      <a href="../index.html"
+        ><img class="nav__image" src="../HP-images/FIFA16.png" alt=""
+      /></a>
+      <svg class="icon icon--white nav__toggler">
+        <use xlink:href="../HP-images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item">
+          <a href="../index.html">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="../Player-Bios/player-bios-index.html">Player Biographies</a>
+        </li>
+        <li class="nav__item">
+          <a href="../Season-2-Driver/S2-index.html">Season 2 Stats & Info</a>
+        </li>
+        <li class="nav__item">
+          <a href="../Tournaments/tournaments-index.html">Tournaments</a>
+        </li>
+        <li class="nav__item">
+          <a href="../Extras/extras-index.html">Extras</a>
+        </li>
+      </ul>
+    </nav>
+    <script src="../js/main.js"></script>
+    <section class="block container">
+      <header class="block__header">
+        <h2 class="seasons-header">League Stats:</h2>
+      </header>
+      <table class="leaguestats__table">
+        <thead>
+          <tr>
+            <th>Statistic</th>
+            <th>Average</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Games Played</td>
+            <td>302 Games</td>
+          </tr>
+          <tr>
+            <td>Goals / Game</td>
+            <td>2.49</td>
+          </tr>
+          <tr>
+            <td>Shots / Game</td>
+            <td>13.69</td>
+          </tr>
+          <tr>
+            <td>Shots on Goal / Game</td>
+            <td>8.04</td>
+          </tr>
+          <tr>
+            <td>Shot on Goal Conversion %</td>
+            <td>30.9%</td>
+          </tr>
+          <tr>
+            <td>Shot Conversion %</td>
+            <td>18.2%</td>
+          </tr>
+          <tr>
+            <td>Yellow Cards / Game</td>
+            <td>1.44</td>
+          </tr>
+          <tr>
+            <td>Red Cards / Game</td>
+            <td>0.23</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="block container">
+      <header class="block__header">
+        <h2 class="seasons-header">Notable Games:</h2>
+      </header>
+      <table class="leaguestats__table-games">
+        <thead>
+          <tr>
+            <th>Performance Metrics</th>
+            <th>Game ID</th>
+            <th>Notable Game Stats</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Biggest Upset</td>
+            <td>Game #185, Karsin (India) 2 - Alejandro (Brazil) 0</td>
+            <td>81 vs 58 Overall Ratings</td>
+          </tr>
+          <tr>
+            <td>Best Offensive Performance</td>
+            <td>Game #192, Gabe (Poland) 1 - Michael (Russia) 0</td>
+            <td>1 Goals, 20 Shots, 15 SOG</td>
+          </tr>
+          <tr>
+            <td>Best Defensive Performance</td>
+            <td>Game #185, Karsin (India) 2 - Alejandro (Brazil) 0</td>
+            <td>0 Goals Allowed, 3 Shots Allowed, 0 SOG Allowed</td>
+          </tr>
+          <tr>
+            <td>Most Agressive Game</td>
+            <td>Game #103, Joe (Netherlands) 0 - Karsin (Spain) 2</td>
+            <td>3 Yellow Cards and 4 Red Cards</td>
+          </tr>
+          <tr>
+            <td>Most Difficult Win</td>
+            <td>Game #302, Alejandro (Poland) 1 - Gabe (Italy) 0</td>
+            <td>80 vs 78 Overall Ratings, 1 Goals, 13 Shots, 6 SOG</td>
+          </tr>
+          <tr>
+            <td>Best Clean Sheet</td>
+            <td>Game #25, Michael (Poland) 0 - Joe (Ecuador) 2</td>
+            <td>12 Shots Saved, 5 SOG Saved</td>
+          </tr>
+          <tr>
+            <td>Best Keeper Game</td>
+            <td>Game #192, Gabe (Poland) 1 - Michael (Russia) 0</td>
+            <td>1 Goal Allowed, 19 Shots Saved, 14 SOG Saved</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="block container">
+      <header class="block__header">
+        <h2 class="seasons-header">Notable Individual Performances:</h2>
+      </header>
+      <table class="leaguestats__table-games">
+        <thead>
+          <tr>
+            <th>Performance Metrics</th>
+            <th>Game ID</th>
+            <th>Notable Game Stats</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Most Individual Goals in a Game</td>
+            <td>Game #44, Alejandro & Joe (France) 1 - Gabe (Argentina) 6</td>
+            <td>6 Goals for Gabe</td>
+          </tr>
+          <tr>
+            <td>Most Individual Shots in a Game</td>
+            <td>Game #192, Gabe (Poland) 1 - Michael (Russia) 0</td>
+            <td>20 Shots for Gabe</td>
+          </tr>
+          <tr>
+            <td>Most Individual Shots on Goals in a Game</td>
+            <td>Game #192, Gabe (Poland) 1 - Michael (Russia) 0</td>
+            <td>15 Shots on Goal for Gabe</td>
+          </tr>
+          <tr>
+            <td>Most Individual Yellow Cards in a Game</td>
+            <td>
+              Game #64, Alejandro & Joe (Uruguay) 1 - Karsin & Gabe (Belgium) 2
+            </td>
+            <td>6 Yellow Cards for Alejandro & Joe</td>
+          </tr>
+          <tr>
+            <td>Most Individual Red Cards in a Game</td>
+            <td>Game #103, Joe (Netherlands) 0 - Karsin (Spain) 2</td>
+            <td>4 Red Cards for Joe</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="block container">
+      <header class="block__header">
+        <h2 class="seasons-header">Notable Full-Game Performances:</h2>
+      </header>
+      <table class="leaguestats__table-games">
+        <thead>
+          <tr>
+            <th>Performance Metrics</th>
+            <th>Game ID</th>
+            <th>Notable Game Stats</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Most Goals in a Game</td>
+            <td>
+              Game #2, Alejandro & Karsin (Spain) 6 - Joe & Gabe (France) 2
+            </td>
+            <td>8 Goals for Alejandro, Karsin, Joe, & Gabe</td>
+          </tr>
+          <tr>
+            <td>Most Shots in a Game</td>
+            <td>Game #69, Gabe (Belgium) 4 - Karsin (Ecuador) 3</td>
+            <td>29 Shots for Gabe & Karsin</td>
+          </tr>
+          <tr>
+            <td>Most Shots on Goals in a Game</td>
+            <td>Game #69, Gabe (Belgium) 4 - Karsin (Ecuador) 3</td>
+            <td>18 Shots on Goal for Gabe & Karsin</td>
+          </tr>
+          <tr>
+            <td>Most Yellow Cards in a Game</td>
+            <td>
+              Game #14, Alejandro & Michael (United States) 2 - Joe & Karsin
+              (Switzerland) 1
+            </td>
+            <td>6 Yellow Cards for Alejandro, Michael, Joe, & Karsin</td>
+          </tr>
+          <tr>
+            <td>Most Red Cards in a Game</td>
+            <td>Game #103, Joe (Netherlands) 0 - Karsin (Spain) 2</td>
+            <td>4 Red Cards for Joe</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="block container">
+      <header class="block__header">
+        <h2 class="seasons-header">Other Notable Upsets:</h2>
+      </header>
+      <table class="leaguestats__table">
+        <thead>
+          <tr>
+            <th>Game #</th>
+            <th>Game ID</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>217</td>
+            <td>Gabe (India) 2 - Alejandro (Poland) 1</td>
+          </tr>
+          <tr>
+            <td>182</td>
+            <td>Joe & Karsin (Germany) 0 - Alejandro & Gabe (New Zealand) 1</td>
+          </tr>
+          <tr>
+            <td>240</td>
+            <td>Gabe (India) 3 - Karsin (Scotland) 1</td>
+          </tr>
+          <tr>
+            <td>140</td>
+            <td>Alejandro & Joe (Spain) 1 - Karsin & Michael (Korea) 2</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>
