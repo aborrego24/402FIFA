@@ -14,6 +14,14 @@
     />
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css"
+    />
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
     <title>Individual Stats</title>
   </head>
   <style>
@@ -93,6 +101,9 @@
     .bruh {
       padding-bottom: 0;
     }
+    .bruh-top {
+      padding-top: 0.5rem;
+    }
   </style>
   <body>
     <nav class="nav collapsible">
@@ -123,64 +134,423 @@
     <script src="../js/main.js"></script>
     <section class="block container bruh">
       <header class="block__header">
-        <h2 class="seasons-header bio-header">Individual Stats</h2>
+        <h2 class="seasons-header bio-header">Team Data</h2>
+        <p class="seasons-text">Scroll to view the stats for the 47 Teams.</p>
         <p class="seasons-text">
-          Scroll to view the stats for the 5 veteran players.
+          Click the Up and Down Arrows to sort the data.
         </p>
       </header>
     </section>
-    <section class="block container">
-      <header class="block__header">
-        <h2 class="seasons-header">Basic Stats:</h2>
-      </header>
-      <table class="leaguestats__table">
+    <section class="block container bruh-top">
+      <table
+        class="searchablesortable leaguestats__table"
+        id="searchablesortable"
+      >
         <thead>
           <tr>
-            <th>Player Name</th>
-            <th>Games Played</th>
-            <th>Win Percentage %</th>
-            <th>Wins</th>
-            <th>Losses</th>
+            <th>Team</th>
+            <th>Team Rating</th>
+            <th>Attack Rating</th>
+            <th>Midfield Rating</th>
+            <th>Defense Rating</th>
+            <th>Overall Rating</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Alejandro</td>
-            <td>188</td>
-            <td>64.4%</td>
-            <td>121</td>
-            <td>66</td>
+            <td>Argentina</td>
+            <td>10</td>
+            <td>86</td>
+            <td>81</td>
+            <td>80</td>
+            <td>82</td>
           </tr>
           <tr>
-            <td>Joe</td>
-            <td>156</td>
-            <td>26.3%</td>
-            <td>41</td>
-            <td>115</td>
-          </tr>
-          <tr>
-            <td>Karsin</td>
-            <td>136</td>
-            <td>55.9%</td>
-            <td>76</td>
-            <td>59</td>
-          </tr>
-          <tr>
-            <td>Gabe</td>
-            <td>90</td>
-            <td>70.0%</td>
-            <td>63</td>
-            <td>27</td>
-          </tr>
-          <tr>
-            <td>Michael</td>
-            <td>102</td>
-            <td>32.4%</td>
-            <td>33</td>
+            <td>Australia</td>
+            <td>7</td>
+            <td>74</td>
             <td>69</td>
+            <td>69</td>
+            <td>71</td>
+          </tr>
+          <tr>
+            <td>Austria</td>
+            <td>8</td>
+            <td>73</td>
+            <td>75</td>
+            <td>75</td>
+            <td>74</td>
+          </tr>
+          <tr>
+            <td>Belgium</td>
+            <td>10</td>
+            <td>77</td>
+            <td>80</td>
+            <td>78</td>
+            <td>78</td>
+          </tr>
+          <tr>
+            <td>Bolivia</td>
+            <td>6</td>
+            <td>69</td>
+            <td>67</td>
+            <td>67</td>
+            <td>68</td>
+          </tr>
+          <tr>
+            <td>Brazil</td>
+            <td>10</td>
+            <td>81</td>
+            <td>81</td>
+            <td>82</td>
+            <td>81</td>
+          </tr>
+          <tr>
+            <td>Bulgaria</td>
+            <td>6</td>
+            <td>72</td>
+            <td>71</td>
+            <td>67</td>
+            <td>70</td>
+          </tr>
+          <tr>
+            <td>Cameroon</td>
+            <td>7</td>
+            <td>75</td>
+            <td>73</td>
+            <td>77</td>
+            <td>75</td>
+          </tr>
+          <tr>
+            <td>Chile</td>
+            <td>8</td>
+            <td>78</td>
+            <td>76</td>
+            <td>74</td>
+            <td>76</td>
+          </tr>
+          <tr>
+            <td>Colombia</td>
+            <td>9</td>
+            <td>81</td>
+            <td>78</td>
+            <td>75</td>
+            <td>78</td>
+          </tr>
+          <tr>
+            <td>Côte d’Ivoire</td>
+            <td>8</td>
+            <td>76</td>
+            <td>78</td>
+            <td>74</td>
+            <td>76</td>
+          </tr>
+          <tr>
+            <td>Czech Republic</td>
+            <td>8</td>
+            <td>73</td>
+            <td>73</td>
+            <td>73</td>
+            <td>73</td>
+          </tr>
+          <tr>
+            <td>Denmark</td>
+            <td>8</td>
+            <td>75</td>
+            <td>74</td>
+            <td>75</td>
+            <td>75</td>
+          </tr>
+          <tr>
+            <td>Ecuador</td>
+            <td>6</td>
+            <td>74</td>
+            <td>73</td>
+            <td>65</td>
+            <td>71</td>
+          </tr>
+          <tr>
+            <td>Egypt</td>
+            <td>6</td>
+            <td>70</td>
+            <td>69</td>
+            <td>67</td>
+            <td>69</td>
+          </tr>
+          <tr>
+            <td>England</td>
+            <td>9</td>
+            <td>81</td>
+            <td>78</td>
+            <td>79</td>
+            <td>79</td>
+          </tr>
+          <tr>
+            <td>Finland</td>
+            <td>6</td>
+            <td>68</td>
+            <td>71</td>
+            <td>68</td>
+            <td>69</td>
+          </tr>
+          <tr>
+            <td>France</td>
+            <td>10</td>
+            <td>85</td>
+            <td>82</td>
+            <td>80</td>
+            <td>82</td>
+          </tr>
+          <tr>
+            <td>Germany</td>
+            <td>10</td>
+            <td>80</td>
+            <td>84</td>
+            <td>81</td>
+            <td>82</td>
+          </tr>
+          <tr>
+            <td>Greece</td>
+            <td>8</td>
+            <td>76</td>
+            <td>74</td>
+            <td>76</td>
+            <td>75</td>
+          </tr>
+          <tr>
+            <td>Hungary</td>
+            <td>7</td>
+            <td>71</td>
+            <td>72</td>
+            <td>67</td>
+            <td>70</td>
+          </tr>
+          <tr>
+            <td>India</td>
+            <td>2</td>
+            <td>61</td>
+            <td>56</td>
+            <td>56</td>
+            <td>58</td>
+          </tr>
+          <tr>
+            <td>Ireland</td>
+            <td>8</td>
+            <td>77</td>
+            <td>75</td>
+            <td>73</td>
+            <td>75</td>
+          </tr>
+          <tr>
+            <td>Italy</td>
+            <td>9</td>
+            <td>79</td>
+            <td>80</td>
+            <td>81</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>Korea</td>
+            <td>7</td>
+            <td>75</td>
+            <td>72</td>
+            <td>70</td>
+            <td>72</td>
+          </tr>
+          <tr>
+            <td>Mexico</td>
+            <td>8</td>
+            <td>80</td>
+            <td>76</td>
+            <td>73</td>
+            <td>76</td>
+          </tr>
+          <tr>
+            <td>Netherlands</td>
+            <td>9</td>
+            <td>83</td>
+            <td>81</td>
+            <td>77</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>New Zealand</td>
+            <td>5</td>
+            <td>65</td>
+            <td>60</td>
+            <td>66</td>
+            <td>64</td>
+          </tr>
+          <tr>
+            <td>Northern Ireland</td>
+            <td>6</td>
+            <td>70</td>
+            <td>68</td>
+            <td>70</td>
+            <td>69</td>
+          </tr>
+          <tr>
+            <td>Norway</td>
+            <td>7</td>
+            <td>74</td>
+            <td>73</td>
+            <td>71</td>
+            <td>73</td>
+          </tr>
+          <tr>
+            <td>Paraguay</td>
+            <td>7</td>
+            <td>75</td>
+            <td>72</td>
+            <td>71</td>
+            <td>73</td>
+          </tr>
+          <tr>
+            <td>Peru</td>
+            <td>7</td>
+            <td>75</td>
+            <td>70</td>
+            <td>68</td>
+            <td>71</td>
+          </tr>
+          <tr>
+            <td>Poland</td>
+            <td>8</td>
+            <td>87</td>
+            <td>74</td>
+            <td>74</td>
+            <td>78</td>
+          </tr>
+          <tr>
+            <td>Portugal</td>
+            <td>9</td>
+            <td>82</td>
+            <td>79</td>
+            <td>79</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <td>Romania</td>
+            <td>7</td>
+            <td>73</td>
+            <td>79</td>
+            <td>72</td>
+            <td>75</td>
+          </tr>
+          <tr>
+            <td>Russia</td>
+            <td>9</td>
+            <td>78</td>
+            <td>77</td>
+            <td>74</td>
+            <td>76</td>
+          </tr>
+          <tr>
+            <td>Scotland</td>
+            <td>7</td>
+            <td>74</td>
+            <td>74</td>
+            <td>70</td>
+            <td>73</td>
+          </tr>
+          <tr>
+            <td>Slovenia</td>
+            <td>7</td>
+            <td>73</td>
+            <td>72</td>
+            <td>70</td>
+            <td>72</td>
+          </tr>
+          <tr>
+            <td>South Africa</td>
+            <td>7</td>
+            <td>70</td>
+            <td>73</td>
+            <td>70</td>
+            <td>71</td>
+          </tr>
+          <tr>
+            <td>Spain</td>
+            <td>10</td>
+            <td>86</td>
+            <td>82</td>
+            <td>83</td>
+            <td>84</td>
+          </tr>
+          <tr>
+            <td>Sweden</td>
+            <td>8</td>
+            <td>77</td>
+            <td>74</td>
+            <td>75</td>
+            <td>75</td>
+          </tr>
+          <tr>
+            <td>Switzerland</td>
+            <td>9</td>
+            <td>75</td>
+            <td>77</td>
+            <td>77</td>
+            <td>76</td>
+          </tr>
+          <tr>
+            <td>Turkey</td>
+            <td>9</td>
+            <td>78</td>
+            <td>79</td>
+            <td>76</td>
+            <td>78</td>
+          </tr>
+          <tr>
+            <td>United States</td>
+            <td>7</td>
+            <td>77</td>
+            <td>73</td>
+            <td>74</td>
+            <td>75</td>
+          </tr>
+          <tr>
+            <td>Uruguay</td>
+            <td>8</td>
+            <td>84</td>
+            <td>74</td>
+            <td>78</td>
+            <td>79</td>
+          </tr>
+          <tr>
+            <td>Venezuela</td>
+            <td>7</td>
+            <td>78</td>
+            <td>71</td>
+            <td>73</td>
+            <td>74</td>
+          </tr>
+          <tr>
+            <td>Wales</td>
+            <td>7</td>
+            <td>85</td>
+            <td>73</td>
+            <td>72</td>
+            <td>77</td>
           </tr>
         </tbody>
       </table>
+      <script>
+        $(document).ready(function () {
+          // Set font family
+          $("body").css("font-family", "'Titillium Web', sans-serif");
+
+          // Initialize DataTables
+          $("#searchablesortable").DataTable({
+            pageLength: 47, // Display 50 elements per page
+            searching: false, // Enable search box
+            ordering: true, // Enable sorting
+            lengthChange: false, // Remove "Show x entries" control
+            info: false, // Remove "Showing x to y of z entries" info
+            paging: false, // Remove pagination controls
+          });
+        });
+      </script>
     </section>
   </body>
 </html>
