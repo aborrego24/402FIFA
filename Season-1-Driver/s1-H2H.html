@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Individual Stats</title>
+  </head>
+  <style>
+    th,
+    td {
+      text-align: center;
+      padding: 8px;
+      border-bottom: 1px solid black;
+      border-bottom: 1px solid #ddd;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    @media only screen and (max-width: 600px) {
+      table {
+        font-size: 12px;
+      }
+
+      th,
+      td {
+        padding: 4px;
+      }
+    }
+    thead {
+      font-size: 20px;
+      font-weight: 800;
+    }
+    th {
+      background-color: #f3cc59;
+      color: black;
+      border: 1px solid black;
+      font-size: 2.5rem;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    tr:nth-child(odd) {
+      background-color: #ffffff;
+    }
+    .leaguestats__table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 2rem;
+    }
+    /*
+    .leaguestats__table th:first-child,
+    .leaguestats__table td:first-child {
+      width: 50%;
+    }
+    .leaguestats__table th:last-child,
+    .leaguestats__table td:last-child {
+      width: 50%;
+    }
+    */
+    .leaguestats__table tbody {
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+      border-bottom: 1px solid black;
+    }
+    .leaguestats__table-GS {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 1.5rem;
+    }
+    .leaguestats__table-GS th {
+      font-size: 1.5rem;
+    }
+    .leaguestats__table-games td {
+      border-right: 1px solid black;
+    }
+    h4 {
+      color: white;
+      font-size: 2rem;
+      margin-bottom: -20px;
+      text-shadow: 2px 2px 4px #444444;
+    }
+    .bruh {
+      padding-bottom: 0;
+    }
+  </style>
+  <body>
+    <nav class="nav collapsible">
+      <a href="../index.html"
+        ><img class="nav__image" src="../HP-images/FIFA16.png" alt=""
+      /></a>
+      <svg class="icon icon--white nav__toggler">
+        <use xlink:href="../HP-images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item">
+          <a href="../index.html">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="../Player-Bios/player-bios-index.html">Player Biographies</a>
+        </li>
+        <li class="nav__item">
+          <a href="../Season-2-Driver/S2-index.html">Season 2 Stats & Info</a>
+        </li>
+        <li class="nav__item">
+          <a href="../Tournaments/tournaments-index.html">Tournaments</a>
+        </li>
+        <li class="nav__item">
+          <a href="../Extras/extras-index.html">Extras</a>
+        </li>
+      </ul>
+    </nav>
+    <script src="../js/main.js"></script>
+    <section class="block container bruh">
+      <header class="block__header">
+        <h2 class="seasons-header bio-header">Head to Head Records</h2>
+        <p class="seasons-text">
+          Discover the bitter and fierce rivalries between the league veterans.
+        </p>
+      </header>
+    </section>
+    <section class="block container">
+      <table class="leaguestats__table-GS">
+        <thead>
+          <tr>
+            <th>Player 1</th>
+            <th>Player 2</th>
+            <th>Player 1 Wins</th>
+            <th>Player 2 Wins</th>
+            <th>Player 1 Longest Win Streak</th>
+            <th>Player 2 Longest Win Streak</th>
+            <th>End of Season Streak</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alejandro</td>
+            <td>Joe</td>
+            <td>66</td>
+            <td>24</td>
+            <td>Alejandro 8</td>
+            <td>Joe 2</td>
+            <td>Alejandro 1</td>
+          </tr>
+          <tr>
+            <td>Alejandro</td>
+            <td>Karsin</td>
+            <td>24</td>
+            <td>21</td>
+            <td>Alejandro 5</td>
+            <td>Karsin 4</td>
+            <td>Alejandro 1</td>
+          </tr>
+          <tr>
+            <td>Alejandro</td>
+            <td>Gabe</td>
+            <td>11</td>
+            <td>13</td>
+            <td>Alejandro 3</td>
+            <td>Gabe 4</td>
+            <td>Alejandro 3</td>
+          </tr>
+          <tr>
+            <td>Alejandro</td>
+            <td>Michael</td>
+            <td>40</td>
+            <td>18</td>
+            <td>Alejandro 8</td>
+            <td>Michael 3</td>
+            <td>Michael 1</td>
+          </tr>
+          <tr>
+            <td>Joe</td>
+            <td>Karsin</td>
+            <td>5</td>
+            <td>32</td>
+            <td>Joe 2</td>
+            <td>Karsin 14</td>
+            <td>Karsin 12</td>
+          </tr>
+          <tr>
+            <td>Joe</td>
+            <td>Gabe</td>
+            <td>1</td>
+            <td>25</td>
+            <td>Joe 1</td>
+            <td>Gabe 18</td>
+            <td>Gabe 18</td>
+          </tr>
+          <tr>
+            <td>Joe</td>
+            <td>Michael</td>
+            <td>16</td>
+            <td>13</td>
+            <td>Joe 7</td>
+            <td>Michael 3</td>
+            <td>Joe 1</td>
+          </tr>
+          <tr>
+            <td>Karsin</td>
+            <td>Gabe</td>
+            <td>21</td>
+            <td>39</td>
+            <td>Karsin 3</td>
+            <td>Gabe 11</td>
+            <td>Gabe 1</td>
+          </tr>
+          <tr>
+            <td>Karsin</td>
+            <td>Michael</td>
+            <td>17</td>
+            <td>6</td>
+            <td>Karsin 5</td>
+            <td>Michael 1</td>
+            <td>Karsin 5</td>
+          </tr>
+          <tr>
+            <td>Gabe</td>
+            <td>Michael</td>
+            <td>4</td>
+            <td>3</td>
+            <td>Gabe 4</td>
+            <td>Michael 3</td>
+            <td>Michael 3</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>
