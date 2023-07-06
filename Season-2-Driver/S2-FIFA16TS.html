@@ -32,9 +32,11 @@
       border-bottom: 1px solid black;
       border-bottom: 1px solid #ddd;
     }
+
     tr:nth-child(even) {
       background-color: #f2f2f2;
     }
+
     @media only screen and (max-width: 600px) {
       table {
         font-size: 12px;
@@ -44,65 +46,30 @@
       td {
         padding: 4px;
       }
+      .logos {
+        width: 50px;
+      }
     }
     thead {
       font-size: 20px;
       font-weight: 800;
     }
+
     th {
       background-color: #f3cc59;
       color: black;
       border: 1px solid black;
-      font-size: 2.5rem;
     }
+
     tr:nth-child(even) {
       background-color: #f2f2f2;
     }
-    tr:nth-child(odd) {
-      background-color: #ffffff;
+    .dataTables_filter {
+      margin-bottom: 0px;
     }
-    .leaguestats__table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 2rem;
-    }
-    /*
-    .leaguestats__table th:first-child,
-    .leaguestats__table td:first-child {
-      width: 50%;
-    }
-    .leaguestats__table th:last-child,
-    .leaguestats__table td:last-child {
-      width: 50%;
-    }
-    */
-    .leaguestats__table tbody {
-      border-left: 1px solid black;
-      border-right: 1px solid black;
-      border-bottom: 1px solid black;
-    }
-    .leaguestats__table-GS {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 1.5rem;
-    }
-    .leaguestats__table-GS th {
-      font-size: 1.5rem;
-    }
-    .leaguestats__table-games td {
-      border-right: 1px solid black;
-    }
-    h4 {
-      color: white;
-      font-size: 2rem;
-      margin-bottom: -20px;
-      text-shadow: 2px 2px 4px #444444;
-    }
-    .bruh {
-      padding-bottom: 0;
-    }
-    .bruh-top {
-      padding-top: 0.5rem;
+
+    .logos {
+      height: 40px;
     }
   </style>
   <body>
@@ -149,6 +116,7 @@
         <thead>
           <tr>
             <th>Team</th>
+            <th>Crest</th>
             <th>Attack Rating</th>
             <th>Midfield Rating</th>
             <th>Defense Rating</th>
@@ -158,6 +126,13 @@
         <tbody>
           <tr>
             <td>Spain</td>
+            <td>
+              <img
+                class="logos"
+                src="../Season-1-Team-Logos/spaincrest.png"
+                alt=""
+              />
+            </td>
             <td>86</td>
             <td>85</td>
             <td>84</td>
