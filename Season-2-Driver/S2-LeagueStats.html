@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base target="_top" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>S2 Individual Stats</title>
+  </head>
+  <style>
+    .center {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .table,
+    .table2 {
+      padding: 0.5rem;
+      width: 400px;
+      height: 800px;
+    }
+    .table2 {
+      height: 800px;
+      width: 620px;
+    }
+    @media only screen and (max-width: 768px) {
+      .table,
+      .table2 {
+        width: 110%;
+        transform: scale(0.85);
+        margin-left: -35px;
+      }
+    }
+    .bruh {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  </style>
+  <body>
+    <nav class="nav collapsible">
+      <a href="../index.html"
+        ><img class="nav__image" src="../HP-images/FIFA16.png" alt=""
+      /></a>
+      <svg class="icon icon--white nav__toggler">
+        <use xlink:href="../HP-images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item">
+          <a href="../index.html">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="../Player-Bios/player-bios-index.html">Player Biographies</a>
+        </li>
+        <li class="nav__item">
+          <a href="../Season-1-Driver/S1-index.html">Season 1 Stats & Info</a>
+        </li>
+        <li class="nav__item">
+          <a href="../Tournaments/tournaments-index.html">Tournaments</a>
+        </li>
+        <li class="nav__item">
+          <a href="../Extras/extras-index.html">Extras</a>
+        </li>
+      </ul>
+    </nav>
+    <script src="../js/main.js"></script>
+    <section class="block container bruh">
+      <header class="block__header">
+        <h2 class="seasons-header">Indidvidual Stats: Season 2</h2>
+        <p class="seasons-text">
+          Check out the current stats for the entire league.
+        </p>
+      </header>
+    </section>
+    <div class="center">
+      <iframe
+        id="sheetFrame"
+        class="table"
+        src="https://script.google.com/macros/s/AKfycbxX0Wc0QKj1cwv5JeB0vlVC8OWhtUu8rRuhzURsXz9OrMLSOQU5fIayjuG2LzUZ3MHuuw/exec"
+        frameborder="0"
+      ></iframe>
+
+      <iframe
+        id="sheetFrame"
+        class="table2"
+        src="https://script.google.com/macros/s/AKfycbxwm3P3rLbG6kUQ4REdHU-EBBDDDk8uOwHPfq7z_T-yc_ODETP_yBHtwSI3nBxvcM-0Dw/exec"
+        frameborder="0"
+      ></iframe>
+    </div>
+  </body>
+</html>
