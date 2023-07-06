@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>S2 Rankings</title>
+    <title>S2 Match Log</title>
   </head>
   <style>
     .center {
@@ -21,15 +21,10 @@
       justify-content: center;
       align-items: center;
     }
-    .table,
-    .table2 {
+    .table {
       padding: 0.5rem;
-      width: 800px;
-      height: 730px;
-    }
-    .table2 {
-      height: 550px;
-      width: 840px;
+      width: 1600px;
+      height: 485px;
     }
     @media only screen and (max-width: 768px) {
       .table,
@@ -42,11 +37,6 @@
     .bruh {
       margin-bottom: 0;
       padding-bottom: 0;
-    }
-    .center_small {
-      margin-top: 2rem;
-      text-align: center;
-      font-size: 5rem;
     }
   </style>
   <body>
@@ -78,31 +68,20 @@
     <script src="../js/main.js"></script>
     <section class="block container bruh">
       <header class="block__header">
-        <h2 class="seasons-header">Stat Rankings: Season 2</h2>
+        <h2 class="seasons-header">Match Log: Season 2</h2>
         <p class="seasons-text">
-          Check out the current stats for the entire league, but ranked.
+          Check out the games played across the league.
         </p>
       </header>
     </section>
-    <h2 class="seasons-header center_small">Individual Stats Rankings</h2>
-    <div class="center">
-      <iframe
-        id="sheetFrame"
-        class="table2"
-        src="https://script.google.com/macros/s/AKfycbyXg9EhOL2gfHTWhvEpwPhlxS_XDTeK7Hygrx6trUGMZjyuHh9dh5s7N9wC_-tP4nqC/exec"
-        frameborder="0"
-      ></iframe>
-    </div>
-    <h2 class="seasons-header center_small">
-      Individual Stats Against Rankings
-    </h2>
     <div class="center">
       <iframe
         id="sheetFrame"
         class="table"
-        src="https://script.google.com/macros/s/AKfycbwMWPt_ogkxj6xscFyiDgd2W7AGJDs9SSIOUzYZ9TSr93l6T_JmMJuqxLUDeTzB_SrR/exec"
+        src="https://script.google.com/macros/s/AKfycbwRvq5p29zc85A0v28FnhL8s1FuxLoHIGO0yoR7QKWwY5SvJ6QqZCd2YaUlZqkRfMhGsg/exec"
         frameborder="0"
       ></iframe>
     </div>
+    <div class="center"></div>
   </body>
 </html>
