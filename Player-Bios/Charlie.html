@@ -16,6 +16,103 @@
     <link rel="stylesheet" href="../css/styles.css" />
     <title>Tournaments</title>
   </head>
+  <style>
+    .bio-header {
+      font-size: 9rem;
+    }
+
+    .crests:last-child {
+      margin-right: 0;
+    }
+
+    .centered-container {
+      /*this is for songs*/
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0px;
+    }
+    .GOTW__video {
+      margin: auto;
+    }
+    .songcenter {
+      margin-bottom: -40px;
+    }
+    .scale__button {
+      scale: 0.8;
+    }
+    .feature:first-of-type {
+      margin-top: 2rem;
+    }
+    .seemore {
+      color: white;
+      font-size: 2.5rem;
+      text-shadow: 2px 2px 4px #444444;
+      text-align: center;
+    }
+
+    .block__header {
+      margin-bottom: 1rem;
+    }
+    .fav__table {
+      font-size: 24px;
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 4px #444444;
+      border-radius: 8px;
+      width: 100%;
+    }
+
+    .fav__table tr:nth-child(2) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .table__insert {
+      border: 3px solid rgb(30, 32, 29);
+      flex: 1 1 33%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2px;
+      background-color: rgb(3, 132, 29);
+    }
+
+    .crests {
+      margin-left: 4px;
+      width: 75px;
+      max-height: 75px;
+      object-fit: contain;
+      justify-content: start;
+    }
+    .crests__nomargin {
+      margin: 0;
+      width: 50px;
+      max-height: 50px;
+      object-fit: scale-down;
+    }
+
+    .position {
+      margin-bottom: 0;
+      margin-right: 5px;
+    }
+
+    th {
+      font-size: 3.5rem;
+    }
+    .movedown {
+      margin-bottom: 0.5rem;
+    }
+
+    .crestsmall {
+      height: 50px;
+      padding: 5px 0;
+    }
+    .crestlarge {
+      height: 70px;
+    }
+  </style>
   <body>
     <nav class="nav collapsible">
       <a href="../index.html"
@@ -29,10 +126,10 @@
           <a href="../index.html">Home</a>
         </li>
         <li class="nav__item">
-          <a href="../Player-Bios/player-bios-index.html">Player Biographies</a>
+          <a href="../Season-2-Driver/S2-index.html">Season 2 Stats & Info</a>
         </li>
         <li class="nav__item">
-          <a href="../Season-2-Driver/S2-index.html">Season 2 Stats & Info</a>
+          <a href="../Season-1-Driver/S1-index.html">Season 1 Stats & Info</a>
         </li>
         <li class="nav__item">
           <a href="../Tournaments/tournaments-index.html">Tournaments</a>
@@ -43,5 +140,233 @@
       </ul>
     </nav>
     <script src="../js/main.js"></script>
+    <section class="block container">
+      <header class="block__header">
+        <h2 class="seasons-header bio-header">Charlie</h2>
+        <p class="seasons-text">
+          Charlie is a fresh face in the 402 FIFA league. Despite his lack of
+          background in the sport, Charlie has shown remarkable growth and
+          potential. Throughout the semester, he has transformed into a
+          formidable competitor, surprising everyone with his rapid development
+          and skill acquisition. Charlie's dedication and determination have
+          made him a force to be reckoned with by the end of the semester,
+          leaving an indelible mark on the league and proving that he is a
+          rising star in the world of FIFA.
+        </p>
+      </header>
+    </section>
+    <section>
+      <header class="block__header">
+        <h2 class="seasons-header bio-header">Top 3 FIFA Songs:</h2>
+      </header>
+      <div class="centered-container">
+        <iframe
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/track/2d8JP84HNLKhmd6IYOoupQ?utm_source=generator"
+          width="90%"
+          height="200"
+          frameborder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+    <section class="block container">
+      <header class="block__header">
+        <h2 class="seasons-header bio-header">Tournament Performances:</h2>
+      </header>
+      <article class="grid grid--1x2 feature movedown">
+        <div class="feature__content">
+          <h3 class="feature__heading">Chicago Invitational</h3>
+          <div>
+            <p>
+              Despite having limited experience playing FIFA, Charlie entered
+              the tournament with determination. As a newcomer, he delivered an
+              impressive performance, managing to limit second-ranked player
+              Michael to just two goals. It's worth noting that Michael was
+              playing with Germany, considered one of the strongest teams in the
+              game. Although Charlie lost the match by a score of 2-0, his
+              resilience and skill in challenging such a formidable opponent
+              showcased his potential and marked him as a player to watch in
+              future competitions.
+            </p>
+          </div>
+          <button class="button2 scale__button">
+            <a class="links" href="../Tournaments/Tournaments-folder/CHINV.html"
+              >Learn More →</a
+            >
+          </button>
+        </div>
+        <picture>
+          <img
+            class="feature__image"
+            src="Player-Bio-Photos/charlie.png"
+            alt="Ale-winning-worlc cup"
+          />
+        </picture>
+      </article>
+    </section>
+    <section class="block container">
+      <header class="block__header">
+        <h2 class="seasons-header bio-header">Favorites</h2>
+      </header>
+      <table class="fav__table">
+        <tr>
+          <th colspan="3">Favorite Teams:</th>
+        </tr>
+        <tr>
+          <td class="table__insert">
+            Sweeden
+            <img
+              class="crests"
+              src="../Season-1-Team-Logos/sweedencrest.png"
+              alt="sweeden Crest"
+            />
+          </td>
+          <td class="table__insert">
+            Norway<img
+              class="crests"
+              src="../Season-1-Team-Logos/norwaylogo.webp"
+              alt="norway crest"
+            />
+          </td>
+        </tr>
+      </table>
+      <table class="fav__table">
+        <tr>
+          <th colspan="3">Favorite Players:</th>
+        </tr>
+        <tr>
+          <td class="table__insert">
+            Pogba
+            <img
+              class="crests__nomargin"
+              src="../FIFA Player Headshots/pogba.png"
+              alt="pogba"
+            />
+            <img
+              class="crests__nomargin"
+              src="../Season-1-Team-Logos/Francecrest.png"
+              alt="france Crest"
+            />
+            <p class="position">CM</p>
+          </td>
+          <td class="table__insert">
+            Matuidi<img
+              class="crests__nomargin"
+              src="../FIFA Player Headshots/matuidi.png"
+              alt="matuidi"
+            />
+            <img
+              class="crests__nomargin"
+              src="../Season-1-Team-Logos/Francecrest.png"
+              alt="france Crest"
+            />
+            <p class="position">CDM</p>
+          </td>
+          <td class="table__insert">
+            Ibrahimović<img
+              class="crests__nomargin"
+              src="../FIFA Player Headshots/Zlatan.png"
+              alt="zlatan"
+            />
+            <img
+              class="crests__nomargin"
+              src="../Season-1-Team-Logos/sweedencrest.png"
+              alt="sweeden Crest"
+            />
+            <p class="position">ST</p>
+          </td>
+        </tr>
+      </table>
+      <table class="fav__table">
+        <tr>
+          <th colspan="3">Favorite Clubs (Prem, La Liga, Other):</th>
+        </tr>
+        <tr>
+          <td class="table__insert">
+            Arsenal
+            <img
+              class="crests"
+              src="../Team-Logos/Arsenal_FC.svg"
+              alt="Arsenal"
+            />
+          </td>
+          <td class="table__insert">
+            BSC Young Boys<img
+              class="crests"
+              src="../Team-Logos/youngboys.svg.png"
+              alt="BSCYB crest"
+            />
+          </td>
+          <td class="table__insert">
+            Gwangju FC<img
+              class="crests"
+              src="../Team-Logos/Gwangju_FC.svg.png"
+              alt="Gwangju FC logo"
+            />
+          </td>
+        </tr>
+      </table>
+    </section>
+    <section class="block container">
+      <header class="block__header">
+        <h2 class="seasons-header bio-header">Other Facts:</h2>
+      </header>
+      <table class="fav__table">
+        <tr>
+          <th colspan="2">Nationality:</th>
+        </tr>
+        <tr>
+          <td class="table__insert">
+            Sweedish
+            <img
+              class="crestsmall crests"
+              src="../Player-Bios/Player-Bio-Photos/sweeden.png"
+              alt="Sweeden"
+            />
+          </td>
+        </tr>
+      </table>
+      <table class="fav__table">
+        <tr>
+          <th colspan="2">Rivals:</th>
+        </tr>
+        <tr>
+          <td class="table__insert">
+            Russia
+            <img
+              class="crests"
+              src="../Season-1-Team-Logos/russiacrest.png"
+              alt="russia crest"
+            />
+          </td>
+          <td class="table__insert">
+            China<img
+              class="crests"
+              src="../Season-1-Team-Logos/chinacrest.png"
+              alt="China crest"
+            />
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="block container">
+      <header class="block__header">
+        <h2 class="seasons-header bio-header">Season Stats:</h2>
+      </header>
+      <p class="seemore">
+        To View Player's Stats, See the Season 1 or Season 2 Stats & Info
+        Section:
+      </p>
+      <button class="button2 scale__button">
+        <a class="links" href="../Season-2-Driver/S2-index.html">Season 2 →</a>
+      </button>
+      <button class="button2 scale__button">
+        <a class="links" href="../Season-1-Driver/S1-index.html">Season 1 →</a>
+      </button>
+    </section>
   </body>
 </html>
