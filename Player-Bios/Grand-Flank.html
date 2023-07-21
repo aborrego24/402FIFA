@@ -16,6 +16,19 @@
     <link rel="stylesheet" href="../css/styles.css" />
     <title>Tournaments</title>
   </head>
+  <style>
+    .Name {
+      color: white;
+    }
+    .feature__image {
+      max-height: 500px;
+      object-fit: cover;
+      object-position: top;
+    }
+    .avis {
+      object-position: bottom;
+    }
+  </style>
   <body>
     <nav class="nav collapsible">
       <a href="../index.html"
@@ -29,10 +42,10 @@
           <a href="../index.html">Home</a>
         </li>
         <li class="nav__item">
-          <a href="../Player-Bios/player-bios-index.html">Player Biographies</a>
+          <a href="../Season-2-Driver/S2-index.html">Season 2 Stats & Info</a>
         </li>
         <li class="nav__item">
-          <a href="../Season-2-Driver/S2-index.html">Season 2 Stats & Info</a>
+          <a href="../Season-1-Driver/S1-index.html">Season 1 Stats & Info</a>
         </li>
         <li class="nav__item">
           <a href="../Tournaments/tournaments-index.html">Tournaments</a>
@@ -43,5 +56,81 @@
       </ul>
     </nav>
     <script src="../js/main.js"></script>
+    <section class="block container">
+      <header class="block__header">
+        <h2 class="seasons-header">Grand Flank</h2>
+        <p class="seasons-text">
+          Our international correspondant, commentators, and coaches reside
+          here.
+        </p>
+      </header>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content">
+          <h3 class="feature__heading">
+            <a class="Name" href="Alejandro.html">ZouZou</a>
+          </h3>
+          <p>ZouZou ZaZa</p>
+          <p>FIFA 23 Enthusiast</p>
+          <p>Favorite Team : FC Barcelona</p>
+        </div>
+        <picture>
+          <img
+            class="feature__image"
+            src="Player-Bio-Photos/zouzou.webp"
+            alt="zouzou Photo"
+          />
+        </picture>
+      </article>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content">
+          <h3 class="feature__heading">
+            <a class="Name" href="Michael.html">Avis</a>
+          </h3>
+          <p>AOT Enjoyer</p>
+          <p>Favorite International Team: Argentina</p>
+          <p>Favorite Club Team: FC Barcelona</p>
+        </div>
+        <picture>
+          <img
+            class="feature__image avis"
+            src="Player-Bio-Photos/Avis.webp"
+            alt="avis Image"
+          />
+        </picture>
+      </article>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content">
+          <h3 class="feature__heading">
+            <a class="Name" href="Joe.html">Patty</a>
+          </h3>
+          <p>ZouZou's brother</p>
+          <p>Favorite International Team: Argentina</p>
+          <p>Favorite Club Team: FC Barcelona</p>
+        </div>
+        <picture>
+          <img
+            class="feature__image avis"
+            src="Player-Bio-Photos/patty.webp"
+            alt="patty Photo"
+          />
+        </picture>
+      </article>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content">
+          <h3 class="feature__heading">
+            <a class="Name" href="John.html">Jmoe</a>
+          </h3>
+          <p>Favorite International Team: Argentina</p>
+          <p>Favorite Club Team: FC Barcelona</p>
+        </div>
+        <picture>
+          <img
+            class="feature__image"
+            src="Player-Bio-Photos/jmoe.webp"
+            alt="jmoe Image"
+          />
+        </picture>
+      </article>
+    </section>
   </body>
 </html>
